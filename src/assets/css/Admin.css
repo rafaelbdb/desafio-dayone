@@ -1,0 +1,76 @@
+.Admin {
+    margin: 2em;
+}
+
+.Admin button {
+    margin-right: 1em;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5em;
+}
+
+.modal-content {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.modal form {
+    background-color: ghostwhite;
+    border-radius: 0.5em;
+    width: 90vw; /* Ajusta a largura conforme o viewport, com limite de 40em */
+    max-width: 40em;
+    height: auto; /* Altura baseada no conteúdo */
+    max-height: 90vh; /* Limite da altura em relação à viewport */
+    padding: 3.5em;
+    box-shadow: 0.5em 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin: 0 auto;
+    overflow-y: auto; /* Scroll se o conteúdo exceder a altura máxima */
+}
+
+.modal form button {
+    margin-right: 0em;
+}
+
+.modal_delete {
+    background-color: ghostwhite;
+    border-radius: 0.5em;
+    width: 90vw; /* Ajusta a largura conforme o viewport, com limite de 40em */
+    max-width: 40em;
+    height: auto; /* Altura baseada no conteúdo */
+    max-height: 90vh; /* Limite da altura em relação à viewport */
+    padding: 3.5em;
+    box-shadow: 0.5em 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin: 0 auto;
+    overflow-y: auto; /* Scroll se o conteúdo exceder a altura máxima */
+}
+
+@media (max-width: 768px) {
+    .modal {
+        width: 90%; /* Mais responsivo em dispositivos menores */
+        max-width: none;
+    }
+}
